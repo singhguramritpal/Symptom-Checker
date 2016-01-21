@@ -1,0 +1,48 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html#body_content, body#body_content, div#body_content, span#body_content, applet#body_content, object#body_content, iframe#body_content,
+h1#body_content, #body_content, h3#body_content, h4#body_content, h5#body_content, h6#body_content, p#body_content, blockquote#body_content, pre#body_content,
+a#body_content, abbr#body_content, acronym#body_content, address#body_content, big#body_content, cite#body_content, code#body_content,
+del#body_content, dfn#body_content, em#body_content, img#body_content, ins#body_content, kbd#body_content, q#body_content, s#body_content, samp#body_content,
+small#body_content, strike#body_content, strong#body_content, sub#body_content, sup#body_content, tt#body_content, var#body_content,
+b#body_content, u#body_content, i#body_content, center#body_content,
+dl#body_content, dt#body_content, dd#body_content, ol#body_content, ul#body_content, li#body_content,
+fieldset#body_content, form#body_content, label#body_content, legend#body_content,
+table#body_content, caption#body_content, tbody#body_content, tfoot#body_content, thead#body_content, tr#body_content, th#body_content, td#body_content,
+article#body_content, aside#body_content, canvas#body_content, details#body_content, embed#body_content,
+figure#body_content, figcaption#body_content, footer#body_content, header#body_content, hgroup#body_content,
+menu#body_content, nav#body_content, output#body_content, ruby#body_content, section#body_content, summary#body_content,
+time#body_content, mark#body_content, audio#body_content, video#body_content {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article#body_content , aside#body_content , details#body_content , figcaption#body_content , figure#body_content ,
+footer#body_content , header#body_content , hgroup#body_content , menu#body_content , nav#body_content , section#body_content , main#body_content  {
+	display: block;
+}
+body#body_content  {
+	line-height: 1;
+}
+ol#body_content , ul#body_content  {
+	list-style: none;
+}
+blockquote#body_content , q#body_content  {
+	quotes: none;
+}
+blockquote#body_content :before, blockquote#body_content :after,
+q#body_content :before, q#body_content :after {
+	content: '';
+	content: none;
+}
+table#body_content  {
+	border-collapse: collapse;
+	border-spacing: 0;
+}

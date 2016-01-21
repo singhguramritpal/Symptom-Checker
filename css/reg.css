@@ -1,0 +1,133 @@
+/*Created by Roopa Vedagiri*/
+
+#loading {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(192, 192, 192, 0.5);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.img_src{
+	width:48px; 
+	display:inline;     
+	position: relative;
+    top: 40px;
+    left: 10px;
+}
+
+.reg {
+	 display:inline;   
+	 padding-left: 20px; 
+	 font-family: Arial; 
+	 font-size: 30px; 
+	 color:green;
+	 position: relative;
+     left: 50px;
+}
+
+#buttonbar{
+	padding: 10px;
+	left: 220px;
+    position: relative;
+    width: 50%;
+}
+
+.errmsg{
+	color:red;
+	font-style:italic;
+}
+
+.hz_line {
+	width: 80em;
+    float: left;
+    margin-left: 20px;
+}
+
+
+
+#table_data td{
+	padding:5px;
+}
+
+#strength1{
+	margin-left:20px;
+}
+
+
+button{
+	margin-right:10px;
+}
+
+footer{
+	height:30px;
+}
+
+#textlabel{
+	font-size:16px;
+	font-weight:bold;
+}
+
+
+.notshow{
+	
+	display:none;
+}
+
+
+.show1{
+	display:inline;
+}
+
+
+.stngh0 {
+    padding: 5px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #ff0000;
+    border:1px solid #000;
+    font-weight:bold;
+}
+
+.stngh1 {
+    padding: 5px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #ffff00;
+    border:1px solid #000;
+    font-weight:bold;
+}
+
+
+.stngh2 {
+    padding: 5px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #4dcd00;
+    border:1px solid #000;
+    font-weight:bold;
+}
+
+
+.stngh3 {
+    padding: 5px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #399800;
+    border:1px solid #000;
+    font-weight:bold;
+}
+
+
+.marginadj1{
+	margin-left:10px;
+}
+
+
+

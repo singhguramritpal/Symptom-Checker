@@ -1,0 +1,176 @@
+<!--
+Manasvini BS
+SJSU ID : 010102040
+CMPE 280
+-->
+<html>
+<head>
+
+		<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+		<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	  <style>
+
+		  .hidden{
+		  	visibility: hidden;
+		  }
+		  .float-left{
+		  	float: left;
+		  }
+		  .float-right{
+		  	float: right;
+		  }
+		  .float-container{
+		  	overflow: auto;
+		  }
+
+		  .img-responsive{
+		  	max-height: 120px;
+		  }
+
+
+		  #portfolio{
+
+		  	position: absolute;
+		  	left: 400px;
+		  	top: 50px;
+		  	width: 400px;
+		  	height: 220px;
+		  	background-color: grey;
+		  	color:black;
+		  	z-index: 101;
+		  }
+		  #imagein{
+		  	padding-top: 20px;
+		  	height: 150px;
+		  	padding-right: 20px;
+		  	border:0px solid #021a40;
+		  }
+		  #second {
+		  	padding-top: 30px
+		  }
+		  img{
+		  	border:1px solid #021a40;
+		  	margin-bottom: 20px;
+		  }
+	  </style>
+
+    </script>
+	  </head>
+	  <body>
+
+
+	  		<div class="col-sm-3"></div>
+
+	    	<div class="col-sm-5" style="background-color:white;position:relative">
+	    		<p>
+	    			<h3 style="color:orange;text-align:center; padding-bottom:30px; padding-top:50px;"> Contact Details</h3>
+	    		</p>
+	    		<div class="row no-gutter">
+	    			<div>
+						<div class="col-lg-4 col-sm-6">
+							<a href="mailto:deepesh.eliyot@gmail.com" class="portfolio-box">
+								<figure>
+									<figurecaption> Deepeseh Eliyot </figurecaption>
+									<img src="img/Deepesh.jpg" class="img-responsive" alt="" data-description="Deepesh Eliyot" data-designation="Pixels Team" data-ceodescription="Phone: (408)- 9270845">
+									
+								<figure>
+							</a>
+						</div>
+						
+						<div class="col-lg-4 col-sm-6">
+							<a href="mailto:manasvinibs1234@gmail.com" class="portfolio-box">
+								<figure>
+									<figurecaption> Manasvini B.S. </figurecaption>
+									<img src="img/Manasvini.jpg" class="img-responsive" alt="" data-description="Manasvini Suryanarayana" data-designation="Pixels Team" data-ceodescription="Phone: (518)- 9270845">
+									
+								<figure>
+							</a>
+						</div>
+						
+						<div class="col-lg-4 col-sm-6">
+							<a href="mailto:guramrit27@gmail.com" class="portfolio-box">
+								<figure>
+									<figurecaption> Guramritpal Singh </figurecaption>
+									<img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAcMAAAAJGQ1YzM4NTFiLTdjOTgtNGNkNi05ODRiLTg2OTJmZTQ5Njg1Yw.jpg" class="img-responsive"  data-designation="Pixels Team" data-ceodescription="Phone: (718)- 9270845">
+								
+							</figure>
+							</a>
+						</div>
+					</div>
+					<br>
+					<br>
+					<div id="second">
+						<div class="col-lg-4 col-sm-6">
+							<a href="mailto:roopa.vedagiri@sjsu.edu" class="portfolio-box">
+								<figure>
+									<figurecaption> Roopa Vedagiri </figurecaption>
+									<img src="img/Roopa.jpg" class="img-responsive" alt="" data-description="Roopa Vedagiri" data-designation="Pixels Team" data-ceodescription="Phone: (510)- 9270845">
+								
+							<figure>
+							</a>
+						</div>
+
+						  <div class="col-lg-4 col-sm-6">
+
+						  </div>
+						<div class="col-lg-4 col-sm-6">
+							<a href="mailto:rutul591@gmail.com" class="portfolio-box">
+								<figure>
+									<figurecaption> Rutul Amin </figurecaption>
+									<img src="img/Rutul.jpg" class="img-responsive" alt="" data-description="Rutul Amin" data-designation="Pixels Team" data-ceodescription="Phone: (520)- 9270845" >
+									
+								<figure>
+							</a>
+						</div>
+					</div>
+				</div>
+	    		<section class="col-sm-4 no-padding hidden float-container" id="portfolio">
+					<div class="float-left">
+						<img src="../img/profileimg.png" class="img-responsive" alt="" id="imagein">
+					</div>
+					<div class="float-right">
+					</div>
+					<div style="padding-top:20px;">
+						<p id="name" style="color:orange;font-size:150%"></p>
+						<p id="desig" style="font-weight:bold;"></p>
+						<a href="http://www.linkedin.com">
+							<img src="img/linkedin.png" style="width:20px;height:20px;border:0">
+						</a>
+						<br>
+						
+						<p id="descrip"><h5></h5></p>
+					</div>
+				</section>
+	    	</div>
+			<div class="col-sm-1" style="background-color:white;">
+			</div>
+		<script>
+
+
+
+			$('.img-responsive').on('mouseover', function(evt){
+
+
+					$('#portfolio').find('#imagein').attr('src', $(evt.target).attr('src'));
+					$('#portfolio').find('#name').text($(evt.target).attr('data-description'));
+					$('#portfolio').find('#desig').text($(evt.target).attr('data-designation'));
+					$('#portfolio').find('#descrip').text($(evt.target).attr('data-ceodescription'));
+					
+					
+					$('#portfolio').removeClass('hidden');
+
+			});
+
+			$('.portfolio-box').on('mouseout', function(evt){
+				$('#portfolio').addClass('hidden');
+
+			});
+
+		</script>
+
+	
+</body>
+</html>
